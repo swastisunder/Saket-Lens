@@ -1,3 +1,4 @@
+/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  margin: 0;
-}
-
+/* Main container */
 .main_box {
   background: url("photo.jpg");
   height: 100vh;
@@ -17,6 +15,7 @@ body {
   overflow: hidden;
 }
 
+/* Button to open the sidebar */
 .btn_one {
   color: #34495e;
   font-size: 30px;
@@ -28,6 +27,7 @@ body {
   top: 10px;
 }
 
+/* Sidebar menu */
 .sidebar_menu {
   position: fixed;
   left: -300px;
@@ -44,6 +44,7 @@ body {
   box-shadow: 2px 0px 20px #34495e;
 }
 
+/* Sidebar logo */
 .sidebar_menu .logo {
   position: relative;
   text-align: center;
@@ -58,11 +59,7 @@ body {
   font-weight: 700;
 }
 
-.sidebar_menu .menu {
-  color: #ecf0f1;
-  padding: 20px 0;
-}
-
+/* Button to close the sidebar */
 .sidebar_menu .btn_two {
   color: #95a5a6;
   font-size: 25px;
@@ -78,6 +75,7 @@ body {
   transform: scale(1.2);
 }
 
+/* Menu items */
 .sidebar_menu .menu li {
   margin-top: 12px;
   padding: 10px 20px;
@@ -96,6 +94,7 @@ body {
   background-color: #34495e;
 }
 
+/* Social media links at the bottom */
 .social_media_bottom {
   position: absolute;
   bottom: 20px;
@@ -122,10 +121,12 @@ body {
   transform: scale(1.2);
 }
 
+/* Checkbox */
 #check {
   display: none;
 }
 
+/* Responsive  when checkbox is checked */
 #check:checked ~ .sidebar_menu {
   left: 0;
 }
