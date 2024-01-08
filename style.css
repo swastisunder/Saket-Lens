@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.main_box {
+  background: url("photo.jpg");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
+}
+
+.btn_one {
+  color: #34495e;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 16px;
+  transition: 1s;
+  top: 10px;
+}
+
+.sidebar_menu {
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: #2c3e50;
+  box-shadow: 1px 0px 10px #34495e;
+  border-radius: 10px;
+  transition: 1s;
+  overflow-y: auto;
+}
+
+.sidebar_menu:hover {
+  box-shadow: 2px 0px 20px #34495e;
+}
+
+.sidebar_menu .logo {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0px 0px 5px #34495e;
+}
+
+.sidebar_menu .logo a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sidebar_menu .menu {
+  color: #ecf0f1;
+  padding: 20px 0;
+}
+
+.sidebar_menu .btn_two {
+  color: #95a5a6;
+  font-size: 25px;
+  line-height: 25px;
+  position: absolute;
+  left: 270px;
+  top: 10px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.sidebar_menu .btn_two:hover {
+  transform: scale(1.2);
+}
+
+.sidebar_menu .menu li {
+  margin-top: 12px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #34495e;
+  transition: 0.5s ease;
+}
+
+.sidebar_menu .menu li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar_menu .menu li:hover {
+  background-color: #34495e;
+}
+
+.social_media_bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.social_media_bottom ul {
+  list-style: none;
+  display: flex;
+}
+
+.social_media_bottom a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.social_media_bottom i {
+  color: #ecf0f1;
+  font-size: 24px;
+  transition: 0.3s ease-in-out;
+}
+
+.social_media_bottom i:hover {
+  transform: scale(1.2);
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+
+#check:checked ~ .btn_one {
+  left: -200px;
+  opacity: 0;
+}
